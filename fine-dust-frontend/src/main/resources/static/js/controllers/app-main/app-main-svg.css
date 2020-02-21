@@ -1,0 +1,53 @@
+.OUTLINE {
+    stroke-linejoin:round;
+    stroke: #f9f3ff;
+    stroke-width: 2;
+    fill: #0e9aef;
+}
+
+.GOOD {
+    stroke-linejoin:round;
+    stroke: #f9f3ff;
+    stroke-width: 2;
+    fill: #0e9aef;
+}
+.NORMAL {
+    stroke-linejoin:round;
+    stroke: #f9f3ff;
+    stroke-width: 2;
+    fill: #27ae60;
+}
+.BAD {
+    stroke-linejoin:round;
+    stroke: #f9f3ff;
+    stroke-width: 2;
+    fill: #ff7e40;
+}
+.VERYBAD {
+    stroke-linejoin:round;
+    stroke: #f9f3ff;
+    stroke-width: 2;
+    fill: #e74c3c;
+}
+
+.nonSelectedTEXT {
+    fill: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+.selectedTEXT {
+    fill: #ffffff;
+    font-size: 26px;
+    font-weight: 900;
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+.conditionalScroll {
+    overflow: scroll;
+    height: 250px;
+    width: 100%;
+}

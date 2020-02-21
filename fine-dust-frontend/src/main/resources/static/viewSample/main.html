@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>main</title>
+
+	<!-- jquery -->
+	<script src="../js/components/jquery-1.11.3.min.js"></script>
+	<script src="../js/components/jquery-ui.js"></script>
+	<script src="../js/components/bootstrap.min.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../css/components/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/components/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../css/components/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/components/notosanskr.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+			<div id="logo" class="light-version">
+				<h1>전국 미세먼지 조회 서비스</h1>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<!-- 실시간 지역별 초미세먼지 정보 -->
+		<div class="contents mt-20">
+			<ul class="top-con-box layout-inline col2">
+				<li class="w-70p">
+					<div class="box-wrap">
+						<h3 class="color-blue"><i class="fa fa-fw" aria-hidden="true" title="Copy to use bars"></i>실시간 지역별 초미세먼지 정보</h3>
+						<ul class="top-wrap layout-inline col2">
+							<li class="map-wrap w-70p">
+								<img src="../images/map02.png" />
+							</li>
+							<li class="w-30p">
+								<div class="map-value mt-20 w-100p">
+									<h6 class="">초미세먼지 상태 기준</h6>
+									<ul class="status-wrap">
+										<li><span class="circle-level good"></span><span>좋음(0~15)</span></li>
+										<li><span class="circle-level normal"></span><span>보통(16~35)</span></li>
+										<li><span class="circle-level bad"></span><span>나쁨(36~75)</span></li>
+										<li><span class="circle-level very-bad"></span><span>매우 나쁨(76~)</span></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="right-panel w-30p">
+					<div class="status-box-list w-full">
+						<ul class="">
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">초미세먼지</p></li>
+									<li><span class="info-txt">50</span></li>
+									<li><span class="info-unit">㎍/㎥</span> </li>
+								</ul>
+							</li>
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">미세먼지</p></li>
+									<li><span class="info-txt">50</span> </li>
+									<li><span class="info-unit">㎍/㎥ </span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">이산화질소</p></li>
+									<li><span class="info-txt">50</span> </li>
+									<li><span class="info-unit">ppcm </span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">아황산가스</p></li>
+									<li><span class="info-txt">50</span> </li>
+									<li><span class="info-unit">ppm</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">오존</p></li>
+									<li><span class="info-txt">50</span> </li>
+									<li><span class="info-unit">ppm</span></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="dust-status-ul layout-inline col3">
+									<li><div class="info-round"><span class="info-icon"></span></div><p class="info-nm">아황산가스</p></li>
+									<li><span class="info-txt">50</span> </li>
+									<li><span class="info-unit">ppm</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 실시간 지역별 통합대기환경 정보 -->
+		<div class="contents mt-10">
+			<div class="box-wrap w-80p">
+				<h3 class="color-blue col-left"><i class="fa fa-fw" title=""></i>실시간 지역별 통합대기환경 정보</h3>
+				<table class="table table-blue text-center mt-20">
+					<caption>2019-10-14 10:00</caption>
+					<thead>
+					<tr>
+						<th class="text-center"><strong>시도</strong></th>
+						<th class="text-center"><strong>상태</strong></th>
+						<th class="text-center"><strong>미세먼지 농도</strong></th>
+						<th class="text-center"><strong>초미세먼지 농도</strong></th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>강남구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>강서구</td>
+						<td>나쁨</td>
+						<td>30</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>강동구</td>
+						<td>매우나쁨</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>노원구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>도봉구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>서초구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>용산구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+					<tr>
+						<td>동작구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>구로구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>금천구</td>
+						<td>좋음</td>
+						<td>10</td>
+						<td>15</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 통합 대기환경 정보 -->
+		<div class="contents mt-20">
+			<div class="box-wrap w-80p">
+				<h3 class="color-blue col-left"><i class="fa fa-fw" aria-hidden="true" title=""></i>통합 대기환경 정보</h3>
+				<div class="ae-wrap">
+					<ul class="ae-box layout-inline col2">
+						<li class="w-80p"><img src="../images/chart_01.png" /></li>
+						<li class="w-20p">
+							<ul class="ae-line-wrap">
+								<li><span class="ae-line"></span>일산화탄소</li>
+								<li><span class="ae-line"></span>이산화질소</li>
+								<li><span class="ae-line"></span>아황산가스</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 통합 대기 환경지수 -->
+		<div class="contents mt-20 mb-20">
+			<div class="box-wrap w-80p">
+				<h3 class="color-blue col-left"><i class="fa fa-fw"  title=""></i>통합 대기 환경지수</h3>
+				<div class="ae-iv-wrap mt-20">
+					<ul class="ae-iv-sel layout-inline col3">
+						<li><select class="w-100p"><option>선택</option></select></li>
+						<li><button class="btn btn-round btn-100 btn-blue">조회</button></li>
+					</ul>
+					<div class="mt-20">
+						<ul class="ae-iv-ul layout-inline col2">
+							<li class="w-60p">
+								<table class="ae-iv-table table table-blue">
+									<colgroup><col width="40"/><col width="30"/><col width="30"/></colgroup>
+									<tr>
+										<th>대기오염</th>
+										<th><strong>점수</strong></th>
+										<th><strong>등급</strong></th>
+									</tr>
+									<tr>
+										<th>아황산가스</th>
+										<td>8</td>
+										<td><span class="circle-level good"></span></td>
+									</tr>
+									<tr>
+										<th>일산화탄소</th>
+										<td>10</td>
+										<td><span class="circle-level normal"></span></td>
+									</tr>
+									<tr>
+										<th>오존</th>
+										<td>15</td>
+										<td><span class="circle-level bad"></span></td>
+									</tr>
+									<tr>
+										<th>이산화질소</th>
+										<td>50</td>
+										<td><span class="circle-level very-bad"></span></td>
+									</tr>
+									<tr>
+										<th>미세먼지</th>
+										<td>22</td>
+										<td><span class="circle-level good"></span></td>
+									</tr>
+									<tr>
+										<th>초미세먼지</th>
+										<td>40</td>
+										<td><span class="circle-level normal"></span></td>
+									</tr>
+								</table>
+							</li>
+							<li class="w-40p">
+								<div class="ae-iv-box">
+									<img src="../images/chart02.png" width="400" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+---
+applications:
+  - name: fine-dust-service
+    memory: 1G
+    path: target/finedust-back-0.0.1-SNAPSHOT.jar
+    env:
+      msa: yes
+      private: 

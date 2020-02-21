@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fineDustApp">
+<head>
+    <meta charset="UTF-8">
+    <title>fine-dust-app</title>
+    <!-- jquery -->
+    <script src="js/components/jquery-1.11.3.min.js"></script>
+    <script src="js/components/jquery-ui.js"></script>
+
+    <!-- angularJS -->
+    <script src="webjars/angularjs/1.7.7/angular.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-route.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-cookies.min.js"></script>
+    <script src="webjars/angularjs/1.7.7/angular-resource.min.js"></script>
+
+    <!-- boostsrap -->
+    <script src="js/components/bootstrap.min.js"></script>
+
+    <!-- chart js & angular-chart.min.js-->
+    <script src="webjars/chart.js/2.3.0/dist/Chart.bundle.min.js"></script>
+    <script src="js/components/angular-chart.min.js"></script>
+
+    <!-- pom.xml 을 통한 설치 -->
+    <!--script src="webjars/jquery/1.11.3/jquery.js"></script-->
+    <!--script src="webjars/jquery/1.11.3/jquery.min.js"></script-->
+    <!--script src="webjars/bootstrap/3.3.2/js/bootstrap.min.js"></script-->
+
+    <!-- local file 없이 설치 -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script-->
+    <!--script src="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script-->
+
+    <!-- css -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/components/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/components/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/components/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/components/notosanskr.css">
+    <link rel="stylesheet" type="text/css" href="css/components/Chart.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+
+    <!-- controller별 css -->
+    <link rel="stylesheet" type="text/css" href="js/controllers/app-main/app-main-svg.css">
+
+
+    <!--controller -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/app-main/app-main.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/app-main/app-main.service.js"></script>
+
+    <script type="text/javascript" src="js/controllers/app-common/app-common.controller.js"></script>
+
+</head>
+<body ng-controller="appCommon as common">
+    <section>
+        <div class="loader-container" ng-show="loadingState" ng-include="'/js/controllers/app-common/app-common.mainLoading.html'" ></div>
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <div id="logo" class="light-version">
+                    <h1>전국 미세먼지 조회 서비스</h1>
+                </div>
+            </div>
+        </header>
+        <!-- body -->
+        <div ng-view></div>
+    </section>
+</body>
+</html>
