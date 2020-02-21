@@ -4,7 +4,7 @@
 2. [**manifest.yml 작성**](https://github.com/startupcloudplatform/fine-dust#manifestyml-작성)
 3. [**cf push**](https://github.com/startupcloudplatform/fine-dust#cf-push)
 4. [**마이크로서비스 구성 방법**](https://github.com/startupcloudplatform/fine-dust#마이크로서비스-구성방법)
-5. [**최종 결과 화면**](https://github.com/startupcloudplatform/fine-dust#최종-결과-화면)
+5. [**최종 결과 화면**](https://github.com/startupcloudplatform/fine-dust#최종-결과화면)
 
 
 
